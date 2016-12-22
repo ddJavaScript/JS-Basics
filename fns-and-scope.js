@@ -5,14 +5,14 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
+
   function isTyler(name) {
     if (name === 'Tyler') {
       return true;
     }
-    else {
       return false;
-    }
   }
+
 //////////////////PROBLEM 2////////////////////
 
 
@@ -20,9 +20,12 @@ var name = 'Tyler';
 
 
   //Code Here
+
   function getName() {
-    return prompt('What is your name?');
+    var name = prompt("What is your name?");
+    return name;
   }
+
 //////////////////PROBLEM 3////////////////////
 
 
@@ -32,16 +35,22 @@ var name = 'Tyler';
 
   //Code Here
 
+  function welcome() {
+    var userName = getName();
+    alert("Welcome, " + userName);
+  }
 
 //////////////////PROBLEM 4////////////////////
 
 
 
 
-//What is the difference between arguments and parameters?
+//What is the difference between parameters and arguments?
 
   //Answer Here
 
+  // Parameters and used as placeholders usually at the declaration of a function. They don't hold value and are mutable.
+  // Arguments and actual values that are passed into a function in place of parameters (placeholders). They are passed into a function at a function invocation.
 
 //////////////////PROBLEM 5////////////////////
 
@@ -52,6 +61,11 @@ var name = 'Tyler';
 
   //Answer Here
 
+  // false              var highScore = false;                The Boolean false
+  // 0                  var highScore = 0;                    The number 0
+  // ''                 var highScore = '';                   An empty string
+  // NaN                var highScore = 10/'score';           Not a number
+  // undefined          var highScore;                        A variable with no value
 
 
 //////////////////PROBLEM 6////////////////////
